@@ -20,6 +20,7 @@ h2 {
 /* Classes that you might find useful */
 /* You may also have to implement your own classes */
 
+
 .flag {
   height: 300px;
   width: 500px;
@@ -32,11 +33,12 @@ h2 {
 }
 
 .threevert {
-  height: 33%;
+  height: 33.33333333333%;
 }
 
 .threehoriz {
-  width: 33.3%;
+  width: 33.333333333333%;
+  flex-direction: row;
 }
 
 .narrow {
@@ -56,10 +58,18 @@ h2 {
   top: 50px;
 }
 
+.label:hover {
+  background-color: bisque;
+  font-size: x-large;
+}
+
 /* Colors */
 
 /* QUESTION 1 */
 
+.red {
+  background-color: red;
+}
 .orange {
   background-color: orange;
 }
@@ -76,7 +86,7 @@ h2 {
   background-color: blue;
 }
 
-.lightblue {
+.light-blue {
   background-color: lightblue;
 }
 
@@ -84,9 +94,14 @@ h2 {
   background-color: purple;
 }
 
+#white {
+  background-color: #fff;
+}
+
 .white {
   background-color: #fff;
 }
+
 
 .black {
   background-color: #000;
@@ -96,14 +111,20 @@ h2 {
 
 .thailand-red {
   background-color: #B5002D;
+  height: 16.6666667%;
+  width: 100%;
 }
 
 .thailand-white {
-  /* TODO */
+  background-color: white;
+  height: 16.6666667%;
+  width: 100%;
 }
 
 .thailand-blue {
-  /* TODO */
+  background-color: #002c84;
+  height: 33.33333333333%;
+  width: 100%;
 }
 
 /* END QUESTION 2 */
@@ -125,16 +146,27 @@ h2 {
 /* END QUESTION 3 */
 
 /* QUESTION 4 */
+.mexico-white {
+  background-color: white;
+  width: 30px;
+}
+
+
 .mexico-green {
   background-color: #006341;
+  width: 33.333333%;
 }
 
 .mexico-img {
-  /* TODO */
+  max-height: 110px;
+  max-width: 110px;
+  align-self: center;
+
 }
 
 .mexico-red {
   background-color: #ce1126;
+  width: 33.333333%;
 }
 
 /* QUESTION 6 */
@@ -148,14 +180,16 @@ h2 {
 }
 
 /* For margin practice */
-.flag1 {
+#flag1 {
   background-color: red;
-  /* TODO */
+  margin-right: 5px;
+  
 }
 
-.flag2 {
+#flag2 {
   background-color: blue;
-  /* TODO */
+  margin-left: 5px;
+ 
 }
 /* For padding practice */
 .padding-container {
@@ -163,4 +197,5 @@ h2 {
   background-color: lightblue;
   background-clip: content-box, padding-box;
   /* TODO */
+  padding: 30px;
 }
